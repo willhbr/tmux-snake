@@ -1,0 +1,13 @@
+defaults:
+  run: dev
+
+images:
+  dev:
+    tag: tmux-snake:latest
+    from: Containerfile
+
+development:
+  dev:
+    image: :dev
+    entrypoint: ['tmux', '-f', 'snake.conf', 'attach']
+
