@@ -9,5 +9,5 @@ images:
 development:
   dev:
     image: :dev
-    entrypoint: ['tmux', '-f', 'snake.conf', 'attach']
+    entrypoint: ['./run.sh']
 
